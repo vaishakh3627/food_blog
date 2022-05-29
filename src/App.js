@@ -1,11 +1,17 @@
 import React from "react";
 
-import "./App.css";
+import "./App.scss";
+
+import "bootstrap/dist/css/bootstrap.min.css";
+
+import HomePage from "./components/home";
+import Footer from "./common/Footer";
 
 function App() {
   return (
     <div className="App">
-      <h1>Welcome</h1>
+      <HomePage />
+      <Footer />
     </div>
   );
 }

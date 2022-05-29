@@ -1,0 +1,27 @@
+.brand {
+  font-size: 2.5rem !important;
+  font-family: "Nunito", sans-serif !important;
+  font-weight: bolder;
+  color: rgb(251, 175, 50) !important;
+  .brand-part {
+    color: rgb(113, 154, 10) !important;
+  }
+  .brand-part:hover {
+    color: rgb(251, 175, 50) !important;
+  }
+}
+.header-links {
+  font-family: "Nunito", sans-serif !important;
+  font-weight: 700;
+  font-size: 1.2rem !important;
+}
+.header-links:hover {
+  color: rgb(251, 175, 50) !important;
+}
+@media only screen and (max-width: 990px) {
+  .header-links {
+    color: black !important;
+    font-size: 1rem !important;
+    font-weight: 300;
+  }
+}
