@@ -82,7 +82,7 @@ const BurgerPage = () => (
     <Col lg={7} md={7} sm={12}>
       {BurgerMenu.map((item, key) => (
         <Row key={key} className="mb-3">
-          <Col lg={2} md={2} sm={2} className="p-2 menu-image-wrapper">
+          <Col lg={2} md={2} sm={2} className="p-2 food-menu-image-wrapper">
             <div className="menu-burger-image"></div>
           </Col>
           <Col lg={8} md={8} sm={8} className="menu-name">
@@ -106,7 +106,7 @@ const SnackPage = () => (
     <Col lg={7} md={7} sm={12}>
       {SnackMenu.map((item, key) => (
         <Row key={key} className="mb-3">
-          <Col lg={2} md={2} sm={2} className="p-2 menu-image-wrapper">
+          <Col lg={2} md={2} sm={2} className="p-2 food-menu-image-wrapper">
             <div className="menu-snack-image"></div>
           </Col>
           <Col lg={8} md={8} sm={8} className="menu-name">
@@ -130,7 +130,7 @@ const BeveragePage = () => (
     <Col lg={7} md={7} sm={12}>
       {BeverageMenu.map((item, key) => (
         <Row key={key} className="mb-3">
-          <Col lg={2} md={2} sm={2} className="p-2 menu-image-wrapper">
+          <Col lg={2} md={2} sm={2} className="p-2 food-menu-image-wrapper">
             <div className="menu-beverage-image"></div>
           </Col>
           <Col lg={8} md={8} sm={8} className="menu-name">
@@ -176,7 +176,7 @@ const Menu = () => {
   };
 
   return (
-    <Container fluid className="menu-wrapper mb-5">
+    <Container fluid className="food-menu-wrapper mb-5">
       <Row>
         <Col xs={12} className="text-center mt-2">
           <h5>Food Menu</h5>
@@ -210,7 +210,7 @@ const Menu = () => {
             Beverages
           </Button>
         </Col>
-        <Col xs={12} className="mt-4 item">
+        <Col xs={12} className="mt-4 food-item">
           {renderComponent[component]}
         </Col>
       </Row>

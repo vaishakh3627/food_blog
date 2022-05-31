@@ -1,0 +1,114 @@
+.feature-layout-wrapper {
+  .feature-header-wrapper {
+    height: 50vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../../assets/img/page-header.jpg");
+  }
+}
+
+//banner
+.feature-banner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  h1 {
+    font-family: "Nunito", sans-serif !important;
+    font-size: 3.5rem !important;
+    font-weight: bolder;
+    color: rgb(251, 175, 50);
+  }
+  h4 {
+    font-family: "Nunito", sans-serif !important;
+    font-weight: bolder;
+    color: white;
+    span {
+      color: rgb(251, 175, 50);
+    }
+  }
+  h4:hover {
+    cursor: pointer;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .feature-banner {
+    h1 {
+      font-size: 2rem !important;
+    }
+  }
+}
+
+//features
+.features-page-wrapper {
+  margin-top: 80px;
+  .features-page-wrapper-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h5 {
+      color: rgb(25, 135, 84);
+      font-family: "Nunito", sans-serif;
+    }
+    h1 {
+      color: rgb(69, 69, 69);
+      max-width: 40rem;
+      font-family: "Nunito", sans-serif;
+      font-weight: 900;
+    }
+    .feature-page-image-wrapper {
+      .feature1-image-content {
+        .feature1-images {
+          width: 100%;
+          border-radius: 10px 0px 0px 0px;
+        }
+        .feature3-images {
+          width: 100%;
+          border-radius: 0px 0px 0px 10px;
+        }
+      }
+      .feature2-images {
+        width: 100%;
+        border-radius: 0px 10px 0px 0px;
+      }
+      .feature4-images {
+        width: 100%;
+        border-radius: 0px 0px 10px 0px;
+      }
+    }
+    p {
+      font-family: "Nunito", sans-serif;
+    }
+    .book-a-table-button {
+      background-color: rgb(251, 175, 50);
+      color: white;
+      border: 2px solid rgb(251, 175, 50);
+      width: 100%;
+      height: 3rem;
+      font-family: "Nunito", sans-serif;
+    }
+    .book-a-table-button:focus {
+      outline: none !important;
+      box-shadow: none !important;
+    }
+    .book-a-table-button:hover {
+      background-color: white;
+      color: rgb(251, 175, 50);
+    }
+    h4 {
+      color: rgb(69, 69, 69);
+      max-width: 40rem;
+      font-family: "Nunito", sans-serif;
+      font-weight: 900;
+    }
+  }
+}
+@media only screen and (max-width: 600px) {
+  .feature-page-details {
+    padding: 0px !important;
+  }
+  .features-page-wrapper {
+    margin-top: 20px !important;
+  }
+}

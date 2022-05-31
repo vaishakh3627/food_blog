@@ -1,0 +1,278 @@
+.menu-page-wrapper {
+  .menu-page-content-wrapper {
+    height: 50vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../../assets/img/page-header.jpg");
+  }
+}
+
+//banner
+.menu-banner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  h1 {
+    font-family: "Nunito", sans-serif !important;
+    font-size: 3.5rem !important;
+    font-weight: bolder;
+    color: rgb(251, 175, 50);
+  }
+  h4 {
+    font-family: "Nunito", sans-serif !important;
+    font-weight: bolder;
+    color: white;
+    span {
+      color: rgb(251, 175, 50);
+    }
+  }
+  h4:hover {
+    cursor: pointer;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .menu-banner {
+    h1 {
+      font-size: 2rem !important;
+    }
+  }
+}
+
+//products
+.menu-products-wrapper {
+  background-color: rgb(245, 245, 245);
+  .menu-product-row-wrapper {
+    .menu-product-col-wrapper {
+      height: 35rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .menu-products {
+        width: 80%;
+        height: 19rem;
+        border-radius: 15px;
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.08);
+        transition: 0.3s;
+        background-color: rgb(255, 255, 255);
+        padding: 20px;
+        .burger-image {
+          width: 6rem;
+          height: 4rem;
+          background-image: url("../../assets/img/burger.svg") !important;
+          filter: invert(57%) sepia(60%) saturate(2878%) hue-rotate(346deg)
+            brightness(104%) contrast(97%);
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-position: center;
+        }
+        .burger-image:hover {
+          background-image: url("../../assets/img/burger.svg") !important;
+          filter: invert(57%) sepia(40%) saturate(2878%) hue-rotate(45deg)
+            brightness(104%) contrast(97%);
+        }
+        .snack-image {
+          width: 6rem;
+          height: 4rem;
+          background-image: url("../../assets/img/snack.svg") !important;
+          filter: invert(57%) sepia(60%) saturate(2878%) hue-rotate(346deg)
+            brightness(104%) contrast(97%);
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-position: center;
+        }
+        .snack-image:hover {
+          background-image: url("../../assets/img/snack.svg") !important;
+          filter: invert(57%) sepia(40%) saturate(2878%) hue-rotate(45deg)
+            brightness(104%) contrast(97%);
+        }
+        .beverage-image {
+          width: 6rem;
+          height: 4rem;
+          background-image: url("../../assets/img/beverage.svg") !important;
+          filter: invert(57%) sepia(60%) saturate(2878%) hue-rotate(346deg)
+            brightness(104%) contrast(97%);
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-position: center;
+        }
+        .beverage-image:hover {
+          background-image: url("../../assets/img/beverage.svg") !important;
+          filter: invert(57%) sepia(40%) saturate(2878%) hue-rotate(45deg)
+            brightness(104%) contrast(97%);
+        }
+        h3 {
+          color: rgb(69, 69, 69);
+          max-width: 40rem;
+          font-family: "Nunito", sans-serif;
+          font-weight: 900;
+        }
+        p {
+          font-family: "Nunito", sans-serif;
+          margin-bottom: 10px !important;
+        }
+        a {
+          font-family: "Nunito", sans-serif;
+          color: rgb(251, 175, 50);
+          text-decoration: none;
+        }
+        a:hover {
+          color: rgb(25, 135, 84);
+          text-decoration: underline;
+        }
+      }
+      .menu-products:hover {
+        box-shadow: none !important;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 600px) {
+  .menu-products-wrapper {
+    .menu-product-row-wrapper {
+      .menu-product-col-wrapper {
+        height: 22rem;
+        .menu-products {
+          width: 95%;
+        }
+      }
+    }
+  }
+}
+
+//menu
+.food-menu-wrapper {
+  h5 {
+    color: rgb(25, 135, 84);
+    font-family: "Nunito", sans-serif;
+  }
+  .food-menu-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h1 {
+      color: rgb(69, 69, 69);
+      max-width: 40rem;
+      font-family: "Nunito", sans-serif;
+      font-weight: 900;
+    }
+  }
+  .active {
+    background-color: rgb(113, 154, 10);
+    border: 1px solid rgb(113, 154, 10);
+    width: 10%;
+    color: white;
+    height: 2.8rem;
+    font-family: "Nunito", sans-serif;
+  }
+  .active:focus {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+  .menu-button {
+    width: 10%;
+    background-color: rgb(251, 175, 50);
+    border: 1px solid rgb(251, 175, 50);
+    color: white;
+    height: 2.8rem;
+    font-family: "Nunito", sans-serif;
+  }
+  .menu-button:hover {
+    background-color: rgb(113, 154, 10);
+    border: 1px solid rgb(113, 154, 10);
+  }
+  .menu-button:focus {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+  .food-item {
+    .food-menu-image-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      .menu-burger-image {
+        width: 5rem;
+        height: 5rem;
+        background-image: url("../../assets/img/menu-burger.jpg");
+        background-size: cover;
+        border-radius: 60px;
+      }
+      .menu-snack-image {
+        width: 5rem;
+        height: 5rem;
+        background-image: url("../../assets/img/menu-snack.jpg");
+        background-size: cover;
+        border-radius: 60px;
+      }
+      .menu-beverage-image {
+        width: 5rem;
+        height: 5rem;
+        background-image: url("../../assets/img/menu-beverage.jpg");
+        background-size: cover;
+        border-radius: 60px;
+      }
+    }
+    .menu-name {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      padding: 0px !important;
+      h5 {
+        color: black;
+        max-width: 40rem;
+        font-family: "Nunito", sans-serif;
+        font-weight: 900;
+        margin: 0px 0px 0px 10px !important;
+      }
+      p {
+        font-family: "Nunito", sans-serif;
+        margin: 0px 0px 0px 10px !important;
+        color: rgb(161, 117, 117);
+      }
+    }
+    .item-price {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      h5 {
+        color: rgb(251, 175, 50);
+        max-width: 40rem;
+        font-family: "Nunito", sans-serif;
+        font-weight: 900;
+        margin: 0px !important;
+      }
+    }
+    .item-big-image {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .item-image {
+        width: 85%;
+        border-radius: 15px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 600px) {
+  .food-menu-wrapper {
+    .menu-button {
+      width: 30%;
+    }
+    .active {
+      width: 30%;
+    }
+    .food-item {
+      .food-menu-image-wrapper {
+        justify-content: flex-start;
+      }
+      .item-price {
+        justify-content: flex-start;
+      }
+      .item-big-image {
+        display: none;
+      }
+    }
+  }
+}

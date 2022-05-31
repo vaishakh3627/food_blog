@@ -1,0 +1,256 @@
+.booking-wrapper {
+  .booking-content-wrapper {
+    height: 50vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../../assets/img/page-header.jpg");
+  }
+}
+
+//banner
+.booking-banner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  h1 {
+    font-family: "Nunito", sans-serif !important;
+    font-size: 3.5rem !important;
+    font-weight: bolder;
+    color: rgb(251, 175, 50);
+  }
+  h4 {
+    font-family: "Nunito", sans-serif !important;
+    font-weight: bolder;
+    color: white;
+    span {
+      color: rgb(251, 175, 50);
+    }
+  }
+  h4:hover {
+    cursor: pointer;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .booking-banner {
+    h1 {
+      font-size: 2rem !important;
+    }
+  }
+}
+
+//booktable
+.booking-table-wrapper {
+  background-color: rgb(245, 245, 245);
+  .booking-table-content-wrapper {
+    padding-top: 90px;
+    padding-left: 100px;
+    h5 {
+      color: rgb(25, 135, 84);
+      font-family: "Nunito", sans-serif;
+    }
+    h1 {
+      color: rgb(69, 69, 69);
+      max-width: 40rem;
+      font-family: "Nunito", sans-serif;
+      font-weight: 900;
+    }
+    p {
+      font-family: "Nunito", sans-serif;
+      max-width: 40rem;
+    }
+  }
+  .book-table-form {
+    background-color: rgb(251, 175, 50);
+    .input-group {
+      border: 1px solid white;
+      border-radius: 6px;
+      height: 2.8rem;
+      .form-control {
+        border: 0 !important;
+        background-color: transparent !important;
+        font-family: "Nunito", sans-serif;
+        color: white;
+      }
+      ::placeholder {
+        color: white;
+        opacity: 0.5;
+        font-size: 0.9rem;
+      }
+      .form-control:focus {
+        outline: none !important;
+        box-shadow: none !important;
+      }
+      .input-icon {
+        border: 0 !important;
+        background-color: transparent !important;
+        color: white;
+      }
+    }
+    .book-now-button {
+      width: 100%;
+      height: 2.8rem;
+      background-color: white;
+      color: rgb(251, 175, 50);
+      font-family: "Nunito", sans-serif;
+      border: 0 !important;
+    }
+    .book-now-button:focus {
+      outline: none !important;
+      box-shadow: none !important;
+    }
+    .book-now-button:hover {
+      background-color: rgb(251, 175, 50);
+      color: white;
+      border: 1px solid white !important;
+    }
+  }
+}
+@media only screen and (max-width: 990px) {
+  .booking-table-wrapper {
+    .booking-table-content-wrapper {
+      margin-top: 10px !important;
+      padding: 12px !important;
+    }
+    p {
+      max-width: none !important;
+    }
+  }
+}
+
+//menu
+.booking-menu-wrapper {
+  h5 {
+    color: rgb(25, 135, 84);
+    font-family: "Nunito", sans-serif;
+  }
+  .food-menu-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h1 {
+      color: rgb(69, 69, 69);
+      max-width: 40rem;
+      font-family: "Nunito", sans-serif;
+      font-weight: 900;
+    }
+  }
+  .active {
+    background-color: rgb(113, 154, 10);
+    border: 1px solid rgb(113, 154, 10);
+    width: 10%;
+    color: white;
+    height: 2.8rem;
+    font-family: "Nunito", sans-serif;
+  }
+  .active:focus {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+  .menu-button {
+    width: 10%;
+    background-color: rgb(251, 175, 50);
+    border: 1px solid rgb(251, 175, 50);
+    color: white;
+    height: 2.8rem;
+    font-family: "Nunito", sans-serif;
+  }
+  .menu-button:hover {
+    background-color: rgb(113, 154, 10);
+    border: 1px solid rgb(113, 154, 10);
+  }
+  .menu-button:focus {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+  .item {
+    .booking-menu-image-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      .menu-burger-image {
+        width: 5rem;
+        height: 5rem;
+        background-image: url("../../assets/img/menu-burger.jpg");
+        background-size: cover;
+        border-radius: 60px;
+      }
+      .menu-snack-image {
+        width: 5rem;
+        height: 5rem;
+        background-image: url("../../assets/img/menu-snack.jpg");
+        background-size: cover;
+        border-radius: 60px;
+      }
+      .menu-beverage-image {
+        width: 5rem;
+        height: 5rem;
+        background-image: url("../../assets/img/menu-beverage.jpg");
+        background-size: cover;
+        border-radius: 60px;
+      }
+    }
+    .menu-name {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      padding: 0px !important;
+      h5 {
+        color: black;
+        max-width: 40rem;
+        font-family: "Nunito", sans-serif;
+        font-weight: 900;
+        margin: 0px 0px 0px 10px !important;
+      }
+      p {
+        font-family: "Nunito", sans-serif;
+        margin: 0px 0px 0px 10px !important;
+        color: rgb(161, 117, 117);
+      }
+    }
+    .item-price {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      h5 {
+        color: rgb(251, 175, 50);
+        max-width: 40rem;
+        font-family: "Nunito", sans-serif;
+        font-weight: 900;
+        margin: 0px !important;
+      }
+    }
+    .item-big-image {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .item-image {
+        width: 85%;
+        border-radius: 15px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 600px) {
+  .booking-menu-wrapper {
+    .menu-button {
+      width: 30%;
+    }
+    .active {
+      width: 30%;
+    }
+    .item {
+      .booking-menu-image-wrapper {
+        justify-content: flex-start;
+      }
+      .item-price {
+        justify-content: flex-start;
+      }
+      .item-big-image {
+        display: none;
+      }
+    }
+  }
+}

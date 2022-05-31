@@ -2,13 +2,12 @@ import React from "react";
 
 import { Col, Container, Row } from "react-bootstrap";
 
-
 const Products = () => {
   return (
-    <Container fluid className="products-wrapper mb-4">
-      <Row className="product-row-wrapper">
-        <Col lg={4} md={4} sm={12} className="product-col-wrapper">
-          <div className="products">
+    <Container fluid className="menu-products-wrapper mb-4">
+      <Row className="menu-product-row-wrapper">
+        <Col lg={4} md={4} sm={12} className="menu-product-col-wrapper">
+          <div className="menu-products">
             <Row>
               <Col xs={12} className="d-flex justify-content-center p-2">
                 <div className="burger-image" />
@@ -29,8 +28,8 @@ const Products = () => {
             </Row>
           </div>
         </Col>
-        <Col lg={4} md={4} sm={12} className="product-col-wrapper">
-          <div className="products">
+        <Col lg={4} md={4} sm={12} className="menu-product-col-wrapper">
+          <div className="menu-products">
             <Row>
               <Col xs={12} className="d-flex justify-content-center p-2">
                 <div className="snack-image" />
@@ -51,8 +50,8 @@ const Products = () => {
             </Row>
           </div>
         </Col>
-        <Col lg={4} md={4} sm={12} className="product-col-wrapper">
-          <div className="products">
+        <Col lg={4} md={4} sm={12} className="menu-product-col-wrapper">
+          <div className="menu-products">
             <Row>
               <Col xs={12} className="d-flex justify-content-center p-2">
                 <div className="beverage-image" />

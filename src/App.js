@@ -4,13 +4,13 @@ import "./App.scss";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
-import HomePage from "./components/home";
+import ApplicationRoutes from "./Routes";
 import Footer from "./common/Footer";
 
 function App() {
   return (
     <div className="App">
-      <HomePage />
+      <ApplicationRoutes />
       <Footer />
     </div>
   );

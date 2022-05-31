@@ -1,0 +1,114 @@
+.chef-wrapper {
+  .chef-content-wrapper {
+    height: 50vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../../assets/img/page-header.jpg");
+  }
+}
+
+//banner
+.chef-banner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  h1 {
+    font-family: "Nunito", sans-serif !important;
+    font-size: 3.5rem !important;
+    font-weight: bolder;
+    color: rgb(251, 175, 50);
+  }
+  h4 {
+    font-family: "Nunito", sans-serif !important;
+    font-weight: bolder;
+    color: white;
+    span {
+      color: rgb(251, 175, 50);
+    }
+  }
+  h4:hover {
+    cursor: pointer;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .chef-banner {
+    h1 {
+      font-size: 2rem !important;
+    }
+  }
+}
+
+//team
+.chef-team-wrapper {
+  h5 {
+    color: rgb(25, 135, 84);
+    font-family: "Nunito", sans-serif;
+  }
+  .chef-team-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    h1 {
+      color: rgb(69, 69, 69);
+      max-width: 40rem;
+      font-family: "Nunito", sans-serif;
+      font-weight: 900;
+    }
+  }
+  margin-bottom: 30px;
+  .chef-team-member-column {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    .chef-team-member {
+      width: 80%;
+      height: 100%;
+      border: 1px solid rgb(216, 215, 215);
+      border-radius: 10px;
+      position: relative;
+      .member-image {
+        width: 100%;
+        border-radius: 10px 10px 0px 0px;
+      }
+      .social-media {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 1px solid transparent;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+        opacity: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        .social-media-icon {
+          width: 2rem !important;
+          color: rgb(251, 175, 50);
+          margin-left: 5px;
+        }
+        .social-media-icon:hover {
+          color: rgb(25, 135, 84);
+        }
+      }
+      .social-media:hover {
+        opacity: 1;
+        transition: 0.5s ease-in;
+      }
+      h4 {
+        font-family: "Nunito", sans-serif;
+        font-weight: 900;
+        margin: 0px !important;
+      }
+      p {
+        font-family: "Nunito", sans-serif;
+        color: rgb(69, 69, 69);
+      }
+    }
+  }
+}

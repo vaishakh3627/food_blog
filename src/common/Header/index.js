@@ -31,7 +31,7 @@ const Header = () => {
       }}
     >
       <Container>
-        <Navbar.Brand href="#home" className="brand">
+        <Navbar.Brand href="/" className="brand">
           Burger <span className="brand-part"> King</span>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -39,49 +39,49 @@ const Header = () => {
           <Nav className="me-auto"></Nav>
           <Nav>
             <Nav.Link
-              href="#deets"
+              href="/"
               className="header-links"
               style={{ color: navBackground ? "" : "white" }}
             >
               Home
             </Nav.Link>
             <Nav.Link
-              href="#memes"
+              href="/about"
               className="header-links"
               style={{ color: navBackground ? "" : "white" }}
             >
               About
             </Nav.Link>
             <Nav.Link
-              href="#memes"
+              href="/feature"
               className="header-links"
               style={{ color: navBackground ? "" : "white" }}
             >
               Feature
             </Nav.Link>
             <Nav.Link
-              href="#memes"
+              href="/chef"
               className="header-links"
               style={{ color: navBackground ? "" : "white" }}
             >
               Chef
             </Nav.Link>
             <Nav.Link
-              href="#memes"
+              href="/menu"
               className="header-links"
               style={{ color: navBackground ? "" : "white" }}
             >
               Menu
             </Nav.Link>
             <Nav.Link
-              href="#memes"
+              href="/booking"
               className="header-links"
               style={{ color: navBackground ? "" : "white" }}
             >
               Booking
             </Nav.Link>
             <Nav.Link
-              href="#memes"
+              href="/contact"
               className="header-links"
               style={{ color: navBackground ? "" : "white" }}
             >
